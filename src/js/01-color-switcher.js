@@ -1,7 +1,7 @@
 const startElement = document.querySelector('[data-start]');
 const stopElement = document.querySelector('[data-stop]');
 const bodyElement = document.body;
-
+let inter;
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
